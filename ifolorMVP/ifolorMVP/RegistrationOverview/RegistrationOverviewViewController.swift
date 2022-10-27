@@ -39,9 +39,12 @@ final class RegistrationOverviewViewController: UIViewController, RegistrationOv
     
     @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
+    
     // RegistrationOverviewViewController
     let presenter: RegistrationOverviewPresenterInput
     
+    var keyboardHandler: KeyboardHandler?
     
     init?(presenter: RegistrationOverviewPresenterInput, coder: NSCoder) {
         self.presenter = presenter
@@ -62,6 +65,12 @@ final class RegistrationOverviewViewController: UIViewController, RegistrationOv
         nameTitleLabel.text = Strings.registrationOverviewName
         emailTitleLabel.text = Strings.registrationOverviewEmail
         birthdateTitleLabel.text = Strings.registrationOverviewBirthdate
+        
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        
+        keyboardHandler = KeyboardHandler(move: containerViewBottomConstraint, in: view)
+        
         registerButton.setTitle(Strings.registrationAction, for: .normal)
     }
     
@@ -104,6 +113,13 @@ extension RegistrationOverviewViewController: RegistrationOverviewUserInterfaceI
         case .enableRegister(let enabled):
             registerButton.isEnabled = enabled
         }
+    }
+}
+
+extension RegistrationOverviewViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 

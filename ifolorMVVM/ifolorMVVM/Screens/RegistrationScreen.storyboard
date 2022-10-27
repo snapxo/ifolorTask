@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NEa-AJ-ISu">
-                                <rect key="frame" x="32" y="284.66666666666669" width="326" height="288.00000000000006"/>
+                                <rect key="frame" x="32" y="284" width="326" height="288"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2g-cN-uGg">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="28.666666666666668"/>
@@ -26,7 +26,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EVb-H5-jf8">
-                                        <rect key="frame" x="0.0" y="44.666666666666629" width="326" height="48.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="44.666666666666686" width="326" height="48.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKK-75-VHp">
                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="14.333333333333334"/>
@@ -35,9 +35,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kor-01-1Ue">
-                                                <rect key="frame" x="0.0" y="14.333333333333371" width="326" height="34"/>
+                                                <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" textContentType="name"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -53,7 +53,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-iI-kDs">
                                                 <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -67,7 +67,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6C-bU-XLK">
-                                                <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="50"/>
+                                                <rect key="frame" x="0.0" y="14.333333333333371" width="326" height="50"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="-3187253852.9071741">
                                                     <!--1900-01-01 11:42:27 +0000-->
                                                 </date>
@@ -81,7 +81,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YW-vN-otN">
-                                        <rect key="frame" x="0.0" y="253.66666666666671" width="326" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="253.66666666666666" width="326" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                     </button>
@@ -91,14 +91,15 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NEa-AJ-ISu" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="2zg-gJ-JJi"/>
                             <constraint firstItem="NEa-AJ-ISu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="FGo-kX-yaG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="NEa-AJ-ISu" secondAttribute="bottom" constant="238" id="HEO-Yn-O8I"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NEa-AJ-ISu" secondAttribute="trailing" constant="32" id="w6I-Xp-ejm"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="birthdateDatePicker" destination="D6C-bU-XLK" id="oAK-qs-n9V"/>
                         <outlet property="birthdateTitleLabel" destination="OOU-Sa-yUz" id="uvi-Q8-yQg"/>
+                        <outlet property="containerViewBottomConstraint" destination="HEO-Yn-O8I" id="6Ah-Tb-qw7"/>
                         <outlet property="emailTextField" destination="LtS-iI-kDs" id="jlO-iC-2XY"/>
                         <outlet property="emailTitleLabel" destination="glz-Ol-qHD" id="SvI-JU-WYP"/>
                         <outlet property="nameTextField" destination="Kor-01-1Ue" id="0dh-EQ-ao1"/>

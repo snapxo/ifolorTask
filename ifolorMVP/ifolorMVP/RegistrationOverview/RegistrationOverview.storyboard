@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gOK-Fc-rBO">
-                                <rect key="frame" x="32" y="284.66666666666669" width="326" height="288.00000000000006"/>
+                                <rect key="frame" x="32" y="284" width="326" height="288"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHr-R2-QF0">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="28.666666666666668"/>
@@ -26,7 +26,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-OD-ZQp">
-                                        <rect key="frame" x="0.0" y="44.666666666666629" width="326" height="48.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="44.666666666666686" width="326" height="48.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-74-UDN">
                                                 <rect key="frame" x="0.0" y="0.0" width="326" height="14.333333333333334"/>
@@ -35,9 +35,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-bf-B2Z">
-                                                <rect key="frame" x="0.0" y="14.333333333333371" width="326" height="34"/>
+                                                <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done" textContentType="name"/>
                                                 <connections>
                                                     <action selector="nameDidChange:" destination="xZf-L1-Lxf" eventType="editingChanged" id="RLO-Xh-E5q"/>
                                                 </connections>
@@ -56,7 +56,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jW8-ei-D6Q">
                                                 <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done" textContentType="email"/>
                                                 <connections>
                                                     <action selector="emailDidChange:" destination="xZf-L1-Lxf" eventType="editingChanged" id="SON-BV-Lz8"/>
                                                 </connections>
@@ -73,7 +73,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDP-dp-sRz">
-                                                <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="50"/>
+                                                <rect key="frame" x="0.0" y="14.333333333333371" width="326" height="50"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="-3187253852.9071741">
                                                     <!--1900-01-01 11:42:27 +0000-->
                                                 </date>
@@ -90,7 +90,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJT-83-kw6">
-                                        <rect key="frame" x="0.0" y="253.66666666666671" width="326" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="253.66666666666666" width="326" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                         <connections>
@@ -101,9 +101,9 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gOK-Fc-rBO" firstAttribute="centerY" secondItem="5Re-2m-6q7" secondAttribute="centerY" id="YUy-21-0kd"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="bottom" secondItem="gOK-Fc-rBO" secondAttribute="bottom" constant="238" id="59x-kc-olY"/>
                             <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="gOK-Fc-rBO" secondAttribute="trailing" constant="32" id="nWo-Gp-ZL6"/>
                             <constraint firstItem="gOK-Fc-rBO" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="32" id="xDc-Gy-XOR"/>
                         </constraints>
@@ -111,6 +111,7 @@
                     <connections>
                         <outlet property="birthdateDatePicker" destination="aDP-dp-sRz" id="rhi-5u-djO"/>
                         <outlet property="birthdateTitleLabel" destination="eVa-5S-zbZ" id="DXn-M0-xX7"/>
+                        <outlet property="containerViewBottomConstraint" destination="59x-kc-olY" id="y4g-H9-3LQ"/>
                         <outlet property="emailTextField" destination="jW8-ei-D6Q" id="EZv-J6-wVa"/>
                         <outlet property="emailTitleLabel" destination="geS-RU-mIf" id="gYD-DY-OKb"/>
                         <outlet property="nameTextField" destination="fdQ-bf-B2Z" id="b3o-m9-f3b"/>
@@ -127,6 +128,9 @@
     <resources>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

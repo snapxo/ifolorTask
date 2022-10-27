@@ -32,12 +32,20 @@ final class RegistrationScreen: UIViewController {
     
     @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var containerViewBottomConstraint: NSLayoutConstraint!
+    
+    var keyboardHandler: KeyboardHandler?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = Strings.introductionTitle
         nameTitleLabel.text = Strings.registrationOverviewName
         emailTitleLabel.text = Strings.registrationOverviewEmail
         birthdateTitleLabel.text = Strings.registrationOverviewBirthdate
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        
+        keyboardHandler = KeyboardHandler(move: containerViewBottomConstraint, in: view)
         
         nameTextField.textPublisher
             .sink { [weak self] name in
@@ -94,5 +102,12 @@ final class RegistrationScreen: UIViewController {
     @available(*, unavailable, renamed: "init(viewModel:coder:)")
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension RegistrationScreen: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

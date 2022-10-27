@@ -24,6 +24,7 @@
 		ACBC50672909644B000E08CA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC50662909644B000E08CA /* Strings.swift */; };
 		ACBC506929098836000E08CA /* ConfirmationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC506829098836000E08CA /* ConfirmationScreen.swift */; };
 		ACBC506B29098844000E08CA /* ConfirmationScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBC506A29098844000E08CA /* ConfirmationScreen.storyboard */; };
+		ACD54E8D290AE66A00222CBA /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD54E8C290AE66A00222CBA /* KeyboardHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		ACBC50662909644B000E08CA /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		ACBC506829098836000E08CA /* ConfirmationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationScreen.swift; sourceTree = "<group>"; };
 		ACBC506A29098844000E08CA /* ConfirmationScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmationScreen.storyboard; sourceTree = "<group>"; };
+		ACD54E8C290AE66A00222CBA /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		ACBC5021290960A5000E08CA /* ifolorMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				ACD54E8B290AE65900222CBA /* Helper */,
 				AC906D59290A8109006D7772 /* ViewModels */,
 				ACBC506C29098A4D000E08CA /* Stores */,
 				ACBC50652909643E000E08CA /* Ressources */,
@@ -197,6 +200,14 @@
 				AC906D5C290A8219006D7772 /* Storing.swift */,
 			);
 			path = Stores;
+			sourceTree = "<group>";
+		};
+		ACD54E8B290AE65900222CBA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ACD54E8C290AE66A00222CBA /* KeyboardHandler.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				ACBC5058290961A3000E08CA /* RegistrationScreen.swift in Sources */,
 				ACBC50552909610C000E08CA /* MainRouter.swift in Sources */,
 				ACBC50672909644B000E08CA /* Strings.swift in Sources */,
+				ACD54E8D290AE66A00222CBA /* KeyboardHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

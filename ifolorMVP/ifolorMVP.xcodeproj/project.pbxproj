@@ -28,6 +28,7 @@
 		ACBC501029095C15000E08CA /* RegistrationOverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC500B29095C15000E08CA /* RegistrationOverviewPresenter.swift */; };
 		ACBC501229095C15000E08CA /* RegistrationOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC500C29095C15000E08CA /* RegistrationOverviewViewController.swift */; };
 		ACBC501429095C15000E08CA /* RegistrationOverviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBC500D29095C15000E08CA /* RegistrationOverviewScreen.swift */; };
+		ACD54E8A290AE55900222CBA /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD54E89290AE55900222CBA /* KeyboardHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		ACBC500B29095C15000E08CA /* RegistrationOverviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationOverviewPresenter.swift; sourceTree = "<group>"; };
 		ACBC500C29095C15000E08CA /* RegistrationOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationOverviewViewController.swift; sourceTree = "<group>"; };
 		ACBC500D29095C15000E08CA /* RegistrationOverviewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationOverviewScreen.swift; sourceTree = "<group>"; };
+		ACD54E89290AE55900222CBA /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 		ACBC4FD829095BC9000E08CA /* ifolorMVP */ = {
 			isa = PBXGroup;
 			children = (
+				ACD54E88290AE53500222CBA /* Helper */,
 				AC906D73290AC3A3006D7772 /* Services */,
 				AC906D70290AB9EF006D7772 /* Router */,
 				AC906D6D290AB4A2006D7772 /* Models */,
@@ -217,6 +220,14 @@
 				ACBC500D29095C15000E08CA /* RegistrationOverviewScreen.swift */,
 			);
 			path = RegistrationOverview;
+			sourceTree = "<group>";
+		};
+		ACD54E88290AE53500222CBA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ACD54E89290AE55900222CBA /* KeyboardHandler.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD54E8A290AE55900222CBA /* KeyboardHandler.swift in Sources */,
 				AC906D66290A9F04006D7772 /* ConfirmationOverviewScreen.swift in Sources */,
 				AC906D6C290A9FDF006D7772 /* Strings.swift in Sources */,
 				ACBC501429095C15000E08CA /* RegistrationOverviewScreen.swift in Sources */,
