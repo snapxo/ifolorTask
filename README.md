@@ -32,8 +32,10 @@ I was split between managing my navigation by subscribing to the $isRegistered o
 This is why I ended up managing it with actions whose callbacks are defined at the init of my screens.
 
 ## Known issues, missing features
-Should you be born on the 1.1.1900, you would have to first select another date before selecting back your birthdate for the datePicker to notify for its valueChanged. This comes from the fact that I set minimum and maximal dates for my date picker, whose initial currentDate shall not be nil and must be within its bounds.
-I first wanted to implement UI feedback with hint and border colors. Although this would take maximal 30 min (given the simplicity of the UI, i would just add a label to the stack view and set isHidden), I would have to validate every field individually and I thought that it would imper the simplicity of the project.
+- Should you be born on the 1.1.1900, you would have to first select another date before selecting back your birthdate for the datePicker to notify for its valueChanged. This comes from the fact that I set minimum and maximal dates for my date picker, whose initial currentDate shall not be nil and must be within its bounds.
+- I first wanted to implement UI feedback with hint and border colors. Although this would take maximal 30 min (given the simplicity of the UI, i would just add a label to the stack view and set isHidden), I would have to validate every field individually and I thought that it would imper the simplicity of the project.
+- My keyboard handler does not support well the suggestion keyboard accessory view instantaneous hide/show, and therefore glitches whilst changing from one textfield to another with suggestions.
+- I should have managed the responders, not requiring the user to clic on each textfield. But I would have again to validate each field and jump to the missing valid input textfield. I did not have enough time.
 
 ## Outro
 It was a good coding task that makes sense. I had fun and interest in tipping my feets in MVVM for an iOS App.
