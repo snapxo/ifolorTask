@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZf-L1-Lxf">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration Overview View Controller-->
+        <scene sceneID="bE3-GS-ChP">
+            <objects>
+                <viewController id="xZf-L1-Lxf" customClass="RegistrationOverviewViewController" customModule="ifolorMVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otx-n8-Vbl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gOK-Fc-rBO">
+                                <rect key="frame" x="32" y="284.66666666666669" width="326" height="288.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHr-R2-QF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-OD-ZQp">
+                                        <rect key="frame" x="0.0" y="44.666666666666629" width="326" height="48.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsb-74-UDN">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdQ-bf-B2Z">
+                                                <rect key="frame" x="0.0" y="14.333333333333371" width="326" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                                <connections>
+                                                    <action selector="nameDidChange:" destination="xZf-L1-Lxf" eventType="editingChanged" id="RLO-Xh-E5q"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="H3S-UI-UJq">
+                                        <rect key="frame" x="0.0" y="108.99999999999999" width="326" height="48.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geS-RU-mIf">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jW8-ei-D6Q">
+                                                <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                <connections>
+                                                    <action selector="emailDidChange:" destination="xZf-L1-Lxf" eventType="editingChanged" id="SON-BV-Lz8"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SEd-Oa-DJd">
+                                        <rect key="frame" x="0.0" y="173.33333333333331" width="326" height="64.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVa-5S-zbZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDP-dp-sRz">
+                                                <rect key="frame" x="0.0" y="14.333333333333314" width="326" height="50"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="-3187253852.9071741">
+                                                    <!--1900-01-01 11:42:27 +0000-->
+                                                </date>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-3187256400">
+                                                    <!--1900-01-01 11:00:00 +0000-->
+                                                </date>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="599482800">
+                                                    <!--2019-12-31 11:00:00 +0000-->
+                                                </date>
+                                                <connections>
+                                                    <action selector="birthdateDidChange:" destination="xZf-L1-Lxf" eventType="valueChanged" id="VLL-ch-FjF"/>
+                                                </connections>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJT-83-kw6">
+                                        <rect key="frame" x="0.0" y="253.66666666666671" width="326" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="didSelectRegister:" destination="xZf-L1-Lxf" eventType="touchUpInside" id="ySU-eU-FSL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Re-2m-6q7"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gOK-Fc-rBO" firstAttribute="centerY" secondItem="5Re-2m-6q7" secondAttribute="centerY" id="YUy-21-0kd"/>
+                            <constraint firstItem="5Re-2m-6q7" firstAttribute="trailing" secondItem="gOK-Fc-rBO" secondAttribute="trailing" constant="32" id="nWo-Gp-ZL6"/>
+                            <constraint firstItem="gOK-Fc-rBO" firstAttribute="leading" secondItem="5Re-2m-6q7" secondAttribute="leading" constant="32" id="xDc-Gy-XOR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdateDatePicker" destination="aDP-dp-sRz" id="rhi-5u-djO"/>
+                        <outlet property="birthdateTitleLabel" destination="eVa-5S-zbZ" id="DXn-M0-xX7"/>
+                        <outlet property="emailTextField" destination="jW8-ei-D6Q" id="EZv-J6-wVa"/>
+                        <outlet property="emailTitleLabel" destination="geS-RU-mIf" id="gYD-DY-OKb"/>
+                        <outlet property="nameTextField" destination="fdQ-bf-B2Z" id="b3o-m9-f3b"/>
+                        <outlet property="nameTitleLabel" destination="xsb-74-UDN" id="CIq-oM-pCe"/>
+                        <outlet property="registerButton" destination="uJT-83-kw6" id="pvK-eJ-apE"/>
+                        <outlet property="titleLabel" destination="WHr-R2-QF0" id="0ZK-Zf-doJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JpL-jN-0wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="551" y="386"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
