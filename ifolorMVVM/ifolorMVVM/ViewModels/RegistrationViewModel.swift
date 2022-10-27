@@ -80,7 +80,7 @@ private extension String {
     }
 }
 
-private extension Date {
+extension Date {
     var isValidBirthdate: Bool {
         guard let minimum = Date.date(with: 1, month: 1, year: 1900), let maximum = Date.date(with: 31, month: 12, year: 2019) else { return false }
         return (minimum <= self) && (self <= maximum)

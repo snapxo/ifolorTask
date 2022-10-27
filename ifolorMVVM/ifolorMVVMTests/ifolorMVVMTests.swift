@@ -35,10 +35,22 @@ final class ifolorMVVMTests: XCTestCase {
     
     func testValidation() throws {
         let sut = RegistrationViewModel()
-        sut.name = "Test"
+        sut.name = "Valid Name"
         sut.email = "invalid.mail"
-        sut.birthdate = Date()
+        sut.birthdate = Date.date(with: 1, month: 9, year: 1994)!
         XCTAssert(sut.isValid == false)
+        sut.name = " "
+        sut.email = "valid.mail@test.com"
+        sut.birthdate = Date.date(with: 1, month: 9, year: 1994)!
+        XCTAssert(sut.isValid == false)
+        sut.name = "Valid Name"
+        sut.email = "valid.mail@test.com"
+        sut.birthdate = Date.date(with: 1, month: 9, year: 2022)!
+        XCTAssert(sut.isValid == false)
+        sut.name = "Valid Name"
+        sut.email = "valid.mail@test.com"
+        sut.birthdate = Date.date(with: 1, month: 9, year: 1994)!
+        XCTAssert(sut.isValid == true)
     }
 
 }
